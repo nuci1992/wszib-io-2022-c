@@ -13,6 +13,13 @@ class Trojkaty {
          if (a == b && b == c && a == c) {
              System.out.println("Trójkąt równoboczny"); 
          }
+
+        if (a == b && b == c && a == c) {
+            System.out.println("Trójkąt równoboczny");
+        }
+        if (a == b || b == c || a == c) {
+            System.out.println("Trójkąt równoramienny");
+        }
          // TODO: tutaj trzeba bedzie dopisac inne przypadki
     }
     /** Wyświetla ekran pomocy */
@@ -30,13 +37,6 @@ class Trojkaty {
         float a = Float.valueOf(args[0]);
         float b = Float.valueOf(args[1]);
         float c = Float.valueOf(args[2]);
-
-        if (a == b && b == c && a == c) {
-            System.out.println("Trójkąt równoboczny");
-        }
-        if (a == b || b == c || a == c) {
-            System.out.println("Trójkąt równoramienny");
-        }
         
         jakiTrojkat(a, b, c);
     }
